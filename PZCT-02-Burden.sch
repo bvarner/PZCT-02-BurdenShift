@@ -1,0 +1,438 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:PZCT-02-Burden-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "PZCT-02 Current To Voltage"
+Date "2017-03-26"
+Rev "1.0.0"
+Comp "Bryan Varner"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L CONN_01X02 P2
+U 1 1 58D8664C
+P 7150 1750
+F 0 "P2" H 7228 1791 50  0000 L CNN
+F 1 "CONN_01X02" H 7228 1700 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 7228 1654 50  0001 L CNN
+F 3 "" H 7150 1750 50  0000 C CNN
+	1    7150 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R9
+U 1 1 58D867E3
+P 6700 1750
+F 0 "R9" H 6770 1796 50  0000 L CNN
+F 1 "18" H 6770 1705 50  0000 L CNN
+F 2 "Resistors_THT:Resistor_Horizontal_RM15mm" H 6770 1659 50  0001 L CNN
+F 3 "" H 6700 1750 50  0000 C CNN
+	1    6700 1750
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 1600 6950 1700
+Wire Wire Line
+	6950 1800 6950 1900
+Wire Wire Line
+	6000 1600 6950 1600
+$Comp
+L CP C1
+U 1 1 58D86A04
+P 6400 1750
+F 0 "C1" H 6518 1796 50  0000 L CNN
+F 1 "10uF" H 6518 1705 50  0000 L CNN
+F 2 "Capacitors_THT:C_Radial_D5_L11_P2" H 6518 1659 50  0001 L CNN
+F 3 "" H 6400 1750 50  0000 C CNN
+	1    6400 1750
+	-1   0    0    -1  
+$EndComp
+Connection ~ 6700 1900
+Connection ~ 6700 1600
+$Comp
+L R R2
+U 1 1 58D86BA9
+P 6000 1750
+F 0 "R2" H 6070 1796 50  0000 L CNN
+F 1 "10K" H 6070 1705 50  0000 L CNN
+F 2 "Resistors_THT:Resistor_Horizontal_RM7mm" H 6070 1659 50  0001 L CNN
+F 3 "" H 6000 1750 50  0000 C CNN
+	1    6000 1750
+	-1   0    0    -1  
+$EndComp
+Connection ~ 6400 1600
+$Comp
+L R R1
+U 1 1 58D86CAB
+P 6000 1450
+F 0 "R1" H 6070 1496 50  0000 L CNN
+F 1 "10K" H 6070 1405 50  0000 L CNN
+F 2 "Resistors_THT:Resistor_Horizontal_RM7mm" H 6070 1359 50  0001 L CNN
+F 3 "" H 6000 1450 50  0000 C CNN
+	1    6000 1450
+	-1   0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR01
+U 1 1 58D86FD7
+P 5550 900
+F 0 "#PWR01" H 5550 750 50  0001 C CNN
+F 1 "+5V" H 5550 1000 50  0000 C CNN
+F 2 "" H 5550 900 50  0000 C CNN
+F 3 "" H 5550 900 50  0000 C CNN
+	1    5550 900 
+	-1   0    0    -1  
+$EndComp
+Connection ~ 6000 1900
+Connection ~ 6000 1600
+Wire Wire Line
+	5750 1900 6400 1900
+$Comp
+L PWR_FLAG #FLG02
+U 1 1 58DBF7D1
+P 5550 900
+F 0 "#FLG02" H 5550 995 50  0001 C CNN
+F 1 "PWR_FLAG" V 5550 1078 50  0000 L CNN
+F 2 "" H 5550 900 50  0000 C CNN
+F 3 "" H 5550 900 50  0000 C CNN
+	1    5550 900 
+	0    -1   1    0   
+$EndComp
+$Comp
+L PWR_FLAG #FLG03
+U 1 1 58DBF812
+P 5750 4900
+F 0 "#FLG03" H 5750 4995 50  0001 C CNN
+F 1 "PWR_FLAG" V 5750 5078 50  0000 L CNN
+F 2 "" H 5750 4900 50  0000 C CNN
+F 3 "" H 5750 4900 50  0000 C CNN
+	1    5750 4900
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	6950 1900 6700 1900
+$Comp
+L CONN_01X02 P3
+U 1 1 58DBFC06
+P 7150 2650
+F 0 "P3" H 7228 2691 50  0000 L CNN
+F 1 "CONN_01X02" H 7228 2600 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 7228 2554 50  0001 L CNN
+F 3 "" H 7150 2650 50  0000 C CNN
+	1    7150 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R10
+U 1 1 58DBFC0C
+P 6700 2650
+F 0 "R10" H 6770 2696 50  0000 L CNN
+F 1 "18" H 6770 2605 50  0000 L CNN
+F 2 "Resistors_THT:Resistor_Horizontal_RM15mm" H 6770 2559 50  0001 L CNN
+F 3 "" H 6700 2650 50  0000 C CNN
+	1    6700 2650
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 2500 6950 2600
+Wire Wire Line
+	6950 2700 6950 2800
+Connection ~ 6700 2800
+Connection ~ 6700 2500
+Wire Wire Line
+	6000 2500 6950 2500
+Wire Wire Line
+	6950 2800 6700 2800
+$Comp
+L CONN_01X02 P4
+U 1 1 58DBFC7D
+P 7150 3550
+F 0 "P4" H 7228 3591 50  0000 L CNN
+F 1 "CONN_01X02" H 7228 3500 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 7228 3454 50  0001 L CNN
+F 3 "" H 7150 3550 50  0000 C CNN
+	1    7150 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R11
+U 1 1 58DBFC83
+P 6700 3550
+F 0 "R11" H 6770 3596 50  0000 L CNN
+F 1 "18" H 6770 3505 50  0000 L CNN
+F 2 "Resistors_THT:Resistor_Horizontal_RM15mm" H 6770 3459 50  0001 L CNN
+F 3 "" H 6700 3550 50  0000 C CNN
+	1    6700 3550
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 3400 6950 3500
+Wire Wire Line
+	6950 3600 6950 3700
+Connection ~ 6700 3700
+Connection ~ 6700 3400
+Wire Wire Line
+	6000 3400 6950 3400
+Wire Wire Line
+	6950 3700 6700 3700
+$Comp
+L CONN_01X02 P5
+U 1 1 58DBFCCB
+P 7150 4450
+F 0 "P5" H 7228 4491 50  0000 L CNN
+F 1 "CONN_01X02" H 7228 4400 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 7228 4354 50  0001 L CNN
+F 3 "" H 7150 4450 50  0000 C CNN
+	1    7150 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R12
+U 1 1 58DBFCD1
+P 6700 4450
+F 0 "R12" H 6770 4496 50  0000 L CNN
+F 1 "18" H 6770 4405 50  0000 L CNN
+F 2 "Resistors_THT:Resistor_Horizontal_RM15mm" H 6770 4359 50  0001 L CNN
+F 3 "" H 6700 4450 50  0000 C CNN
+	1    6700 4450
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 4300 6950 4400
+Wire Wire Line
+	6950 4500 6950 4600
+Connection ~ 6700 4600
+Connection ~ 6700 4300
+Wire Wire Line
+	6000 4300 6950 4300
+Wire Wire Line
+	6950 4600 6700 4600
+$Comp
+L CP C2
+U 1 1 58DC01BA
+P 6400 2650
+F 0 "C2" H 6518 2696 50  0000 L CNN
+F 1 "10uF" H 6518 2605 50  0000 L CNN
+F 2 "Capacitors_THT:C_Radial_D5_L11_P2" H 6518 2559 50  0001 L CNN
+F 3 "" H 6400 2650 50  0000 C CNN
+	1    6400 2650
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R4
+U 1 1 58DC01C0
+P 6000 2650
+F 0 "R4" H 6070 2696 50  0000 L CNN
+F 1 "10K" H 6070 2605 50  0000 L CNN
+F 2 "Resistors_THT:Resistor_Horizontal_RM7mm" H 6070 2559 50  0001 L CNN
+F 3 "" H 6000 2650 50  0000 C CNN
+	1    6000 2650
+	-1   0    0    -1  
+$EndComp
+Connection ~ 6400 2500
+$Comp
+L R R3
+U 1 1 58DC01C7
+P 6000 2350
+F 0 "R3" H 6070 2396 50  0000 L CNN
+F 1 "10K" H 6070 2305 50  0000 L CNN
+F 2 "Resistors_THT:Resistor_Horizontal_RM7mm" H 6070 2259 50  0001 L CNN
+F 3 "" H 6000 2350 50  0000 C CNN
+	1    6000 2350
+	-1   0    0    -1  
+$EndComp
+Connection ~ 6000 2800
+Connection ~ 6000 2500
+Wire Wire Line
+	5750 2800 6400 2800
+$Comp
+L CP C3
+U 1 1 58DC0807
+P 6400 3550
+F 0 "C3" H 6518 3596 50  0000 L CNN
+F 1 "10uF" H 6518 3505 50  0000 L CNN
+F 2 "Capacitors_THT:C_Radial_D5_L11_P2" H 6518 3459 50  0001 L CNN
+F 3 "" H 6400 3550 50  0000 C CNN
+	1    6400 3550
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R6
+U 1 1 58DC080D
+P 6000 3550
+F 0 "R6" H 6070 3596 50  0000 L CNN
+F 1 "10K" H 6070 3505 50  0000 L CNN
+F 2 "Resistors_THT:Resistor_Horizontal_RM7mm" H 6070 3459 50  0001 L CNN
+F 3 "" H 6000 3550 50  0000 C CNN
+	1    6000 3550
+	-1   0    0    -1  
+$EndComp
+Connection ~ 6400 3400
+$Comp
+L R R5
+U 1 1 58DC0814
+P 6000 3250
+F 0 "R5" H 6070 3296 50  0000 L CNN
+F 1 "10K" H 6070 3205 50  0000 L CNN
+F 2 "Resistors_THT:Resistor_Horizontal_RM7mm" H 6070 3159 50  0001 L CNN
+F 3 "" H 6000 3250 50  0000 C CNN
+	1    6000 3250
+	-1   0    0    -1  
+$EndComp
+Connection ~ 6000 3700
+Connection ~ 6000 3400
+Wire Wire Line
+	5750 3700 6400 3700
+$Comp
+L CP C4
+U 1 1 58DC09D4
+P 6400 4450
+F 0 "C4" H 6518 4496 50  0000 L CNN
+F 1 "10uF" H 6518 4405 50  0000 L CNN
+F 2 "Capacitors_THT:C_Radial_D5_L11_P2" H 6518 4359 50  0001 L CNN
+F 3 "" H 6400 4450 50  0000 C CNN
+	1    6400 4450
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R8
+U 1 1 58DC09DA
+P 6000 4450
+F 0 "R8" H 6070 4496 50  0000 L CNN
+F 1 "10K" H 6070 4405 50  0000 L CNN
+F 2 "Resistors_THT:Resistor_Horizontal_RM7mm" H 6070 4359 50  0001 L CNN
+F 3 "" H 6000 4450 50  0000 C CNN
+	1    6000 4450
+	-1   0    0    -1  
+$EndComp
+Connection ~ 6400 4300
+$Comp
+L R R7
+U 1 1 58DC09E1
+P 6000 4150
+F 0 "R7" H 6070 4196 50  0000 L CNN
+F 1 "10K" H 6070 4105 50  0000 L CNN
+F 2 "Resistors_THT:Resistor_Horizontal_RM7mm" H 6070 4059 50  0001 L CNN
+F 3 "" H 6000 4150 50  0000 C CNN
+	1    6000 4150
+	-1   0    0    -1  
+$EndComp
+Connection ~ 6000 4600
+Connection ~ 6000 4300
+Wire Wire Line
+	5750 4600 6400 4600
+Wire Wire Line
+	5750 1900 5750 4900
+Connection ~ 5750 2800
+Connection ~ 5750 3700
+Connection ~ 5750 4600
+Wire Wire Line
+	5550 4000 6000 4000
+Wire Wire Line
+	5550 900  5550 4000
+Wire Wire Line
+	5550 3100 6000 3100
+Wire Wire Line
+	5550 2200 6000 2200
+Connection ~ 5550 3100
+Wire Wire Line
+	5550 1300 6000 1300
+Connection ~ 5550 2200
+Connection ~ 5550 1300
+$Comp
+L GND #PWR04
+U 1 1 58DC18E2
+P 5750 4900
+F 0 "#PWR04" H 5750 4650 50  0001 C CNN
+F 1 "GND" H 5755 4727 50  0000 C CNN
+F 2 "" H 5750 4900 50  0000 C CNN
+F 3 "" H 5750 4900 50  0000 C CNN
+	1    5750 4900
+	-1   0    0    -1  
+$EndComp
+$Comp
+L CONN_01X06 P1
+U 1 1 58DC1AC0
+P 3500 2750
+F 0 "P1" H 3578 2791 50  0000 L CNN
+F 1 "CONN_01X06" H 3578 2700 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x06" H 3578 2654 50  0001 L CNN
+F 3 "" H 3500 2750 50  0000 C CNN
+	1    3500 2750
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 2500 5550 2200
+Wire Wire Line
+	3700 2500 5550 2500
+Wire Wire Line
+	3700 2600 5750 2600
+Connection ~ 5750 2600
+Wire Wire Line
+	6700 1900 6700 2000
+Wire Wire Line
+	6700 2000 4800 2000
+Wire Wire Line
+	4800 2000 4800 2700
+Wire Wire Line
+	4800 2700 3700 2700
+Wire Wire Line
+	3700 2800 4800 2800
+Wire Wire Line
+	4800 2800 4800 2900
+Wire Wire Line
+	4800 2900 6700 2900
+Wire Wire Line
+	6700 2900 6700 2800
+Wire Wire Line
+	6700 3700 6700 3800
+Wire Wire Line
+	6700 3800 4700 3800
+Wire Wire Line
+	4700 3800 4700 2900
+Wire Wire Line
+	4700 2900 3700 2900
+Wire Wire Line
+	3700 3000 4600 3000
+Wire Wire Line
+	4600 3000 4600 4700
+Wire Wire Line
+	4600 4700 6700 4700
+Wire Wire Line
+	6700 4700 6700 4600
+$EndSCHEMATC
