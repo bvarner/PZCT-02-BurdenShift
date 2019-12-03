@@ -3,8 +3,9 @@ Resistive burden &amp; level shift to convert PZCT-02 Split-core Current Transfo
 
 ![Component Side](plots/PZCT-02-Burden-brd.png) ![Copper Side](plots/PZCT-02-Burden-B.Cu.png)
 
-In searching for split-core current transformers, I ran across a [rather inexpensive CT](https://www.amazon.com/gp/product/B01LWN37KS/ref=oh_aui_detailpage_o04_s01?ie=UTF8&psc=1) on Amazon.
-
+In searching for split-core current transformers, I ran across the PZCT-02. A rather inexpensive split-core 100 Amp transformer.
+[Amazon](https://www.amazon.com/s?k=PZCT-02+current+transformer)
+[AliExpress](https://www.aliexpress.com/wholesale?SearchText=PZCT-02)
 
 This circuit provides burden resistance, voltage division & test point shifting to feed measurements into an Analog to Digital Converter (ADC).
 
